@@ -13,7 +13,6 @@ mat-sidenav-container {
     display: flex;
     flex-direction: column;
     position: relative;
-    overflow-y: hidden;
 
     .toolbar {
       position: fixed;
@@ -86,7 +85,7 @@ mat-sidenav-container {
               display: inline-block;
               width: 70px;
               padding: 0 0 0 5px;
-              overflow: hidden;
+              // overflow: hidden;
               text-align: left;
               white-space: nowrap;
               transition: width 0.5s;
