@@ -15,6 +15,8 @@ import {
 } from '@app/core';
 import { environment as env } from '@env/environment';
 
+import { ANIMATE_ON_ROUTE_ENTER } from '@app/core';
+
 import { NIGHT_MODE_THEME, selectorSettings } from './settings';
 
 @Component({
@@ -24,6 +26,7 @@ import { NIGHT_MODE_THEME, selectorSettings } from './settings';
   animations: [routerTransition]
 })
 export class AppComponent implements OnInit, OnDestroy {
+  animateOnRouteEnter = ANIMATE_ON_ROUTE_ENTER;
   private unsubscribe$: Subject<void> = new Subject<void>();
 
   @HostBinding('class') componentCssClass;
@@ -36,7 +39,8 @@ export class AppComponent implements OnInit, OnDestroy {
   navigation = [
     { link: 'home', label: 'Home' },
     { link: 'mods', label: 'MODs' },
-    { link: 'shop', label: 'Shop' }
+    { link: 'shop', label: 'Shop' },
+    { link: 'authenticate', label: 'Authenticate'}
   ];
   navigationSideMenu = [
     ...this.navigation,

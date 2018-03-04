@@ -21,6 +21,10 @@ const routes: Routes = [
     loadChildren: 'app/examples/examples.module#ExamplesModule'
   },
   {
+    path: 'authenticate',
+    loadChildren: 'app/authentication/authentication.module#AuthenticationModule'
+  },
+  {
     path: '**',
     redirectTo: 'home'
   }

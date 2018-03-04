@@ -38,6 +38,11 @@
           Sign in
         </button>
 
+        <button mat-raised-button color="accent" [routerLink]="['/authenticate']" routerLinkActive="router-link-active"
+        [ngClass]="animateOnRouteEnter">
+          Login
+        </button>
+
         <button *ngIf="isAuthenticated"
                 mat-icon-button
                 [matMenuTriggerFor]="toolbarUserMenu">
