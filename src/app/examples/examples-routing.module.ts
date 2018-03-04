@@ -8,6 +8,9 @@ import { TodosComponent } from './todos/todos.component';
 import { StockMarketComponent } from './stock-market/stock-market.component';
 import { ParentComponent } from './theming/parent/parent.component';
 import { AuthenticatedComponent } from './authenticated/authenticated.component';
+import { ProjectsComponent } from '@app/examples/projects/projects.component';
+import { PreordersComponent } from '@app/examples/preorders/preorders.component';
+import { OrdersComponent } from '@app/examples/orders/orders.component';
 
 const routes: Routes = [
   {
@@ -16,28 +19,28 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'todos',
+        redirectTo: 'projects',
         pathMatch: 'full'
       },
       {
-        path: 'todos',
-        component: TodosComponent,
+        path: 'projects',
+        component: ProjectsComponent,
         data: {
-          title: 'Todos'
+          title: 'Projects'
         }
       },
       {
-        path: 'stock-market',
-        component: StockMarketComponent,
+        path: 'preorders',
+        component: PreordersComponent,
         data: {
-          title: 'Stock Market'
+          title: 'Pre-Orders'
         }
       },
       {
-        path: 'theming',
-        component: ParentComponent,
+        path: 'orders',
+        component: OrdersComponent,
         data: {
-          title: 'Theming'
+          title: 'Orders'
         }
       },
       {

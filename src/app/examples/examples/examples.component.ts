@@ -10,9 +10,9 @@ import { routerTransition } from '@app/core';
 })
 export class ExamplesComponent implements OnInit {
   examples = [
-    { link: 'todos', label: 'Todos' },
-    { link: 'stock-market', label: 'Stock Market' },
-    { link: 'theming', label: 'Theming' },
+    { link: 'projects', label: 'Projects' },
+    { link: 'preorders', label: 'Pre-orders' },
+    { link: 'orders', label: 'Orders' },
     { link: 'authenticated', label: 'Authenticated' }
   ];
 
