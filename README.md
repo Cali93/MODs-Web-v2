@@ -1,74 +1,126 @@
-# Angular, ngrx and Angular Material Starter 
-by [@tomastrajan](https://twitter.com/tomastrajan)
+# MODS
 
-[![license](https://img.shields.io/github/license/tomastrajan/angular-ngrx-material-starter.svg)](https://github.com/tomastrajan/angular-ngrx-material-starter/blob/master/LICENSE) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier) [![Build Status](https://travis-ci.org/tomastrajan/angular-ngrx-material-starter.svg?branch=master)](https://travis-ci.org/tomastrajan/angular-ngrx-material-starter) [![Twitter Follow](https://img.shields.io/twitter/follow/tomastrajan.svg?style=social&label=Follow)](https://twitter.com/tomastrajan)
+## BECODE - CYCORP: CONCEPTION D'UNE APPLICATION
+
+Elisa della Faille, Amandine Meeus, Cali Armut, Serge Maïkere, Jimmy Goossens, Aldebaran Desombergh 
+***********************************************************
+
+## Mod's?
+Il s'agit d'un outil durable, innovant et éco-responsable pour construire des structures temporaires ou permanentes.
+
+* Conception 3D : optimiser l'utilisation de matière, éviter les erreurs, offrir une visualisation avant réalisation;
+* Logistique : optimiser et diminuer les transports grâce à l'outil de conception 3D;
+* Utilisation : flexibilité, ergonomie, rapidité de montage et démontage;
+* Réutilisation : réemploi, reconditionnement et recyclage des produits; 
+* Matières premières : matériaux locaux ou FSC, matériaux de récupération via filières de revalorisation;
+* Production : localisée à Bruxelles avec des partenaires belges.
+
+Site internet: http://mcb-atelier.be/mods/
+Email: info@mail-mcb.com
+Tél: 02/217.71.33
+
+## Objectifs?
+Concevoir et mettre en ligne une application permettant la conception personnalisée en imagerie 3D.
+Les visées sont une optimisation logistique, une diminution du transport et stockage ainsi qu'une appropriation intuitive par les clients, des potentialités offertes par les Mod's. 
+
+## Le 18 décembre 2017 (11h): Visite de l'atelier
+
+### Lieu: 
+Anderlecht (rue Henri-Joseph Genesse, 34 B2)
+
+### Participants: 
+Julien De Visscher (Mod's co-founder), Juan Cely Ramos, Elisa della Faille, Amandine Meeus, Cali Armut, Serge Maïkere, Jimmy Goossens, Aldebaran Desombergh.
+
+### Notes:
+
+#### *Informations techniques:* 
+
+Taille: 50x10 (fixe non extensible)
+
+Deux systèmes: cimaises visées sur le module ou cimaises intégrées (pour le système d'accroche)
+
+Petits trous pour les boulons et grands trous pour les cables
+
+Limitation à 1500-2000 Mod's maximum => définir la puissance de la tablette pour ne pas faire ramer le chargement (limiter la surface de travail et la taille des objets en fonction de la capacité). Les trous ne sont pas nécessaires pour modéliser, ils doivent juste figurer dans le rendu final.
+
+Système de tarification dans l'application
+
+Application intuitive et cohérente avec le site web (style et contenu épurés, simples et efficaces) !!! 
+
+Pas pour smartphone
+
+Options: couleurs - structures prédéfinies - matières - accessoires... 
+
+Fond blanc, quadrillage pour développer le volume (mesure au sol : 50x50)
+
+### *Pistes de réflexion:*
+
+En atelier on prémonte certaines structures: réfléchir si la modélisation 3D se fait Mod's par Mod's ou si on peut insérer des structures préétablies numérotées et enregistrées dans une bibliothèque de structures
+
+Le client commence par définir une surface qu'il aménage selon ses besoins
+
+Mise en garde ouverture/remplissage à prévoir (portes et fenêtres...) et penser aux facteurs qui rendraient la modélisation impossible (alerte dès 3m).
+
+Espace client --> login uniquement au moment de la sauvegarde (nom, email, tél). Si on veut remodifier, possibilité via un lien mais le lancement de l'application se fait sans login pour version démo avec limitation des fonctionnalités. 
+
+Espace admin --> DB admin avec infos clients + leurs projets sauvegardés.
+
+Une fois l'application terminée, créer un site spécialement dédié aux Mod's: une page APP et une page EVENTS
 
 
-![into](https://raw.githubusercontent.com/tomastrajan/angular-ngrx-material-starter/master/meta-assets/intro.png)
-![themes](https://raw.githubusercontent.com/tomastrajan/angular-ngrx-material-starter/master/meta-assets/themes.png)
+#### *Objectifs:*
 
-## Table of Content
+Autonomie dans l'exploitation et pouvoir faire évoluer le produit en fonction des besoins.
 
-  * [Getting Started](#getting-started)
-  * [Useful Commands](#useful-commands)
-  * [Learning Materials](#learning-materials)
-  * [List of Projects Built Using This Starter](https://github.com/tomastrajan/angular-ngrx-material-starter/blob/master/BUILT_WITH.md)
-  * [Features](#features)
-  * [Stack](#stack)
-  * [Code of Conduct](https://github.com/tomastrajan/angular-ngrx-material-starter/blob/master/CODE_OF_CONDUCT.md)
-  * [Contributors Guide](https://github.com/tomastrajan/angular-ngrx-material-starter/blob/master/CONTRIBUTING.md)
-  * [Changelog](https://github.com/tomastrajan/angular-ngrx-material-starter/blob/master/CHANGELOG.md)
+#### *Projets:*
+
+Modules de bureaux évolutifs, bibliothèques,  kots étudiants (200 Mod's/chambres), accessoires (étagères, finitions avec écrans intégrés, impression de logos...) 
 
 
-## Getting started
-```bash
-git clone https://github.com/tomastrajan/angular-ngrx-material-starter.git new-project
-cd new-project
-npm install
-npm start
-```
+## Le 12 février 2018 (10h): Réunion avec le client
 
-## Useful Commands
-  * `npm start` - starts a dev server and opens browser with running app
-  * `npm run test` - runs lint and tests
-  * `npm run watch` - runs tests in watch mode
-  * `npm run prod` - runs full prod build and serves prod bundle
-  * `npm run prettier` - runs prettier to format whole code base (`.ts` and `.scss`) 
-  * `npm run analyze` - runs full prod build and `webpack-bundle-analyzer` to visualize how much code is shipped (dependencies & application) 
+### Lieu: 
+BeCentral
 
+### Participants: 
+Julien De Visscher (Mod's co-founder), Juan Cely Ramos, Elisa della Faille, Amandine Meeus, Cali Armut, Serge Maïkere, Jimmy Goossens, Aldebaran Desombergh.
 
-## Learning Materials
+### Notes:
 
-  * [Demo & Documentation](http://tomastrajan.github.io/angular-ngrx-material-starter/)
-  * [Blog post about Best Practices for Angular CLI](https://medium.com/@tomastrajan/6-best-practices-pro-tips-for-angular-cli-better-developer-experience-7b328bc9db81) used in this starter project
-  * [Blog post about Typescript tips for Ngrx reducer code](https://medium.com/@tomastrajan/object-assign-vs-object-spread-in-angular-ngrx-reducers-3d62ecb4a4b0)
+#### *Compte-rendu à l'issue du premier sprint:* 
 
-#### Theming 
+- La fonction "Ajouter Mods" doit être beaucoup plus intuitive ou ajouter un explicatif du fonctionnement de l'éditeur; 
+- Enlever le snap et ajouter une indication sur l’ajustement correct (aimantage?);
+- Respecter l'intégrité physique des Mods (ne pas descendre en dessous du sol, ne pas faire flotter des objets dans le néant, éviter les fusions...);
+- Message « loading » qui indique que l’éditeur charge;
+- Rotation plus facile et plus précise : indiquer manuellement l’ouverture de l’angle souhaitée en degré;
+- Traitement des commandes (réception d’un pdf par mail);
+- Rendre le shop plus clair (ajouter des titres aux colonnes / système de couleurs? icones?);
+- Interface administrateur (important de pouvoir interagir avec les comptes clients et de pouvoir récupérer leurs constructions...);
+- Mettre en couleur le Mods en cours pour le repérer plus aisément;
+- Choisir le nombre de clones (quantité à dupliquer);
+- Intégrer les présets dans une bibliothèque générale (l’administrateur peut gérer la base de données et créer/ajouter des présets);
+- Finitions de 3mm à 22mm d’épaisseur max;
+- Julien va envoyer les accessoires.
 
-  * [Blog post](https://medium.com/@tomastrajan/the-complete-guide-to-angular-material-themes-4d165a9d24d1)
-  * [Presentation (Slides)](http://slides.com/tomastrajan/angular-material-themes-guide#/)
-  * [Live coding Video Tutorial](https://www.youtube.com/watch?v=PsgZjFTAleI)
-  * [Meetup Presentation & Live coding Video](https://www.youtube.com/watch?v=7auj9RfCNrE)
+IMPORTANT => Mode tablette : rendre opérationnel l’éditeur et afficher toutes les options au click droit
 
- 
-## Features
+## Le 14 février 2018 (11h30): Départ du deuxième sprint
 
-* custom themes support (3 themes included)
-* lazy-loading of feature modules
-* lazy reducers
-* localStorage ui state persistence
-* `@ngrx/effects` for API requests
-* fully responsive design
-* angular-material and custom components in `SharedModule`
- 
-## Stack
+### Dates:
 
-* Angular
-* ngrx (or try [ngx-model](https://github.com/tomastrajan/ngx-model) if you prefer less boilerplate)
-* Angular Material
-* Bootstrap 4 (only reset, utils and grids)
+Du 14/02 au 12/03
 
+### Feedback de Juan: rendre les actions de l'application plus "user friendly"
 
-### Acknowledgements
-
-Built with and uses [Angular CLI](https://github.com/angular/angular-cli)
+- Fonctionnalités pour tablettes: pivoter avec deux doigts, changer l'angle avec un doigt, appuyer sur un MODS avec deux doigts pour afficher un menu numérique avec des inputs...;
+- Supprimer le snap et proposer une barre d'échelle de 1 mm à 10 cm;
+- Marqueur de contact entre MODS;
+- Menu de droite avec les propriétés du MODS (position x/y, rotation, groupe de modules, calques comme dans Photoshop...);
+- Créer des habillages par défaut dans la data base;
+- Possibilité de modifier l'application depuis la data base;
+- Table avec les présets par défaut;
+- Côté admin;
+- Shop plus clair (projets en cours - sauvés - commandés);
+- Proposer un "tetris" de MODS par menu numérique (nombre de MODS à ajouter);
+- Page loader qui empêche l'utilisateur d'appuyer pendant le chargement.
