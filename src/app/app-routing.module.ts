@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { SettingsComponent } from './settings';
-
 const routes: Routes = [
   {
     path: '',
@@ -10,15 +8,8 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'settings',
-    component: SettingsComponent,
-    data: {
-      title: 'Settings'
-    }
-  },
-  {
     path: 'shop',
-    loadChildren: 'app/examples/examples.module#ExamplesModule'
+    loadChildren: 'app/shop/shop.module#ShopModule'
   },
   {
     path: 'authenticate',

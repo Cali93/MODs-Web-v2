@@ -5,8 +5,6 @@ import { NgModule } from '@angular/core';
 import { SharedModule } from '@app/shared';
 import { CoreModule } from '@app/core';
 
-import { ThreeAngular } from '@app/threeAngular';
-
 import { SettingsModule } from './settings';
 import { StaticModule } from './static';
 
@@ -22,9 +20,6 @@ import { AppComponent } from './app.component';
     // core & shared
     CoreModule,
     SharedModule,
-
-    // ThreeAngular
-    ThreeAngular,
 
     // features
     StaticModule,

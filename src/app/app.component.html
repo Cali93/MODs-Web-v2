@@ -27,21 +27,16 @@
 
         <span class="d-none d-md-inline">
           <button mat-button class="nav-button" *ngFor="let item of navigation"
-              [routerLink]="[item.link]" routerLinkActive="active">
+              [routerLink]="[item.link]" routerLinkActive="active" [ngClass]="animateOnRouteEnter">
             {{item.label}}
           </button>
         </span>
 
-        <button mat-button class="sign-in-button "
+        <!-- <button mat-button class="sign-in-button "
                 *ngIf="!isAuthenticated"
                 (click)="onLoginClick()">
           Sign in
-        </button>
-
-        <button mat-raised-button color="accent" [routerLink]="['/authenticate']" routerLinkActive="router-link-active"
-        [ngClass]="animateOnRouteEnter">
-          Login
-        </button>
+        </button> -->
 
         <button *ngIf="isAuthenticated"
                 mat-icon-button
@@ -55,9 +50,9 @@
           </button>
         </mat-menu>
 
-        <button mat-icon-button routerLink="settings" class="d-none d-sm-inline">
+        <!-- <button mat-icon-button routerLink="settings" class="d-none d-sm-inline">
           <mat-icon>settings</mat-icon>
-        </button>
+        </button> -->
 
         <a matTooltip="Project Github Repository"
            matdTooltipPosition="before"

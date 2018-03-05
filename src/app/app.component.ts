@@ -40,7 +40,7 @@ export class AppComponent implements OnInit, OnDestroy {
     { link: 'home', label: 'Home' },
     { link: 'mods', label: 'MODs' },
     { link: 'shop', label: 'Shop' },
-    { link: 'authenticate', label: 'Authenticate'}
+    { link: 'authenticate', label: 'Login'}
   ];
   navigationSideMenu = [
     ...this.navigation,

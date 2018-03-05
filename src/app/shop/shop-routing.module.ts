@@ -3,19 +3,16 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AuthGuardService } from '@app/core';
 
-import { ExamplesComponent } from './examples/examples.component';
-import { TodosComponent } from './todos/todos.component';
-import { StockMarketComponent } from './stock-market/stock-market.component';
-import { ParentComponent } from './theming/parent/parent.component';
+import { ShopComponent } from './shop/shop.component';
 import { AuthenticatedComponent } from './authenticated/authenticated.component';
-import { ProjectsComponent } from '@app/examples/projects/projects.component';
-import { PreordersComponent } from '@app/examples/preorders/preorders.component';
-import { OrdersComponent } from '@app/examples/orders/orders.component';
+import { ProjectsComponent } from '@app/shop/projects/projects.component';
+import { PreordersComponent } from '@app/shop/preorders/preorders.component';
+import { OrdersComponent } from '@app/shop/orders/orders.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: ExamplesComponent,
+    component: ShopComponent,
     children: [
       {
         path: '',
@@ -59,4 +56,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class ExamplesRoutingModule {}
+export class ShopRoutingModule {}

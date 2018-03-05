@@ -5,11 +5,11 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from '@app/shared';
 import { CoreModule } from '@app/core';
 
-import { ExamplesComponent } from './examples.component';
+import { ShopComponent } from './shop.component';
 
-describe('ExamplesComponent', () => {
-  let component: ExamplesComponent;
-  let fixture: ComponentFixture<ExamplesComponent>;
+describe('ShopComponent', () => {
+  let component: ShopComponent;
+  let fixture: ComponentFixture<ShopComponent>;
 
   beforeEach(
     async(() => {
@@ -20,13 +20,13 @@ describe('ExamplesComponent', () => {
           SharedModule,
           CoreModule
         ],
-        declarations: [ExamplesComponent]
+        declarations: [ShopComponent]
       }).compileComponents();
     })
   );
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ExamplesComponent);
+    fixture = TestBed.createComponent(ShopComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
