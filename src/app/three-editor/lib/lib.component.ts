@@ -1,6 +1,7 @@
 import {
   Component,
-  AfterViewInit
+  AfterViewInit,
+  OnInit
 } from '@angular/core';
 
 @Component({
@@ -8,7 +9,7 @@ import {
   templateUrl: './lib.component.html',
   styleUrls: ['./lib.component.scss']
 })
-export class LibComponent implements AfterViewInit {
+export class LibComponent implements OnInit, AfterViewInit {
 
   constructor() {}
 
