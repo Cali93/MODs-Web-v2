@@ -10,6 +10,7 @@ import { LibComponent } from './lib/lib.component';
     CommonModule,
     ThreeEditorRoutingModule
   ],
-  declarations: [ThreeEditorComponent, LibComponent]
+  declarations: [ThreeEditorComponent, LibComponent],
+  exports: [ThreeEditorComponent, LibComponent]
 })
 export class ThreeEditorModule { }
