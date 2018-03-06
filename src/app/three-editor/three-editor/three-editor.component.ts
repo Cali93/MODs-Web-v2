@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThreeEditorService } from '../three-editor.service';
 
 @Component({
   selector: 'anms-three-editor',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThreeEditorComponent implements OnInit {
 
-  constructor() { }
+  constructor(public threeEditor: ThreeEditorService) {
+    this.threeEditor.ngOnInit()
+    // this.threeEditor.ngAfterViewInit()
+  }
 
   ngOnInit() {
   }

@@ -1,17 +1,9 @@
-import {
-  Component,
-  AfterViewInit,
-  OnInit
-} from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
 
-@Component({
-  selector: 'anms-lib',
-  templateUrl: './lib.component.html',
-  styleUrls: ['./lib.component.scss']
-})
-export class LibComponent implements OnInit, AfterViewInit {
+@Injectable()
+export class ThreeEditorService implements OnInit {
 
-  constructor() {}
+  constructor() { }
 
   public loadLink(linkUrl: string) {
     return new Promise((resolve, reject) => {
@@ -33,21 +25,19 @@ export class LibComponent implements OnInit, AfterViewInit {
     })
   }
 
-  ngOnInit() {
-    this.loadLink('../../assets/editor/js/libs/codemirror/codemirror.css');
-    this.loadLink('../../assets/editor/js/libs/codemirror/addon/dialog.css');
-    this.loadLink('../../assets/editor/js/libs/codemirror/addon/show-hint.css');
-    this.loadLink('../../assets/editor/js/libs/codemirror/addon/tern.css');
-    this.loadLink('../../assets/editor/js/libs/codemirror/theme/monokai.css');
-    this.loadLink('../../assets/editor/css/main.css');
-    this.loadLink('../../assets/editor/css/dark.css');
-    this.loadLink('../../assets/editor/css/menus.css');
-    this.loadLink('../../assets/editor/css/reset.css');
-    this.loadLink('https://fonts.googleapis.com/css?family=Montserrat:300');
-  }
+  async ngOnInit() {
+    await this.loadLink('../../assets/editor/js/libs/codemirror/codemirror.css');
+    await this.loadLink('../../assets/editor/js/libs/codemirror/addon/dialog.css');
+    await this.loadLink('../../assets/editor/js/libs/codemirror/addon/show-hint.css');
+    await this.loadLink('../../assets/editor/js/libs/codemirror/addon/tern.css');
+    await this.loadLink('../../assets/editor/js/libs/codemirror/theme/monokai.css');
+    await this.loadLink('../../assets/editor/css/main.css');
+    await this.loadLink('../../assets/editor/css/dark.css');
+    await this.loadLink('../../assets/editor/css/menus.css');
+    await this.loadLink('../../assets/editor/css/reset.css');
+    await this.loadLink('https://fonts.googleapis.com/css?family=Montserrat:300');
 
-  async ngAfterViewInit() {
-
+    // Scripts
     await this.loadScript('../../assets/build/three.js');
     await this.loadScript('../../assets/editor/deba.js');
     await this.loadScript('../../assets/editor/js/anarhistory.js');
@@ -57,8 +47,8 @@ export class LibComponent implements OnInit, AfterViewInit {
     await this.loadScript('../../assets/examples/js/controls/EditorControls.js');
     await this.loadScript('../../assets/examples/js/controls/TransformControls.js');
 
-    await this.loadScript('../../assets/examples/js/libs/jszip.min.js');
-    await this.loadScript('../../assets/examples/js/libs/inflate.min.js');
+    // await this.loadScript('../../assets/examples/js/libs/jszip.min.js');
+    // await this.loadScript('../../assets/examples/js/libs/inflate.min.js');
 
     await this.loadScript('../../assets/examples/js/loaders/AMFLoader.js');
     await this.loadScript('../../assets/examples/js/loaders/AWDLoader.js');
@@ -71,16 +61,16 @@ export class LibComponent implements OnInit, AfterViewInit {
     await this.loadScript('../../assets/examples/js/loaders/OBJLoader.js');
     await this.loadScript('../../assets/examples/js/loaders/MTLLoader.js');
     await this.loadScript('../../assets/examples/js/loaders/PlayCanvasLoader.js');
-    await this.loadScript('../../assets/examples/js/loaders/PLYLoader.js');
-    await this.loadScript('../../assets/examples/js/loaders/STLLoader.js');
-    await this.loadScript('../../assets/examples/js/loaders/TGALoader.js');
-    await this.loadScript('../../assets/examples/js/loaders/TDSLoader.js');
-    await this.loadScript('../../assets/examples/js/loaders/UTF8Loader.js');
-    await this.loadScript('../../assets/examples/js/loaders/VRMLLoader.js');
-    await this.loadScript('../../assets/examples/js/loaders/VTKLoader.js');
-    await this.loadScript('../../assets/examples/js/loaders/ctm/lzma.js');
-    await this.loadScript('../../assets/examples/js/loaders/ctm/ctm.js');
-    await this.loadScript('../../assets/examples/js/loaders/ctm/CTMLoader.js');
+    // await this.loadScript('../../assets/examples/js/loaders/PLYLoader.js');
+    // await this.loadScript('../../assets/examples/js/loaders/STLLoader.js');
+    // await this.loadScript('../../assets/examples/js/loaders/TGALoader.js');
+    // await this.loadScript('../../assets/examples/js/loaders/TDSLoader.js');
+    // await this.loadScript('../../assets/examples/js/loaders/UTF8Loader.js');
+    // await this.loadScript('../../assets/examples/js/loaders/VRMLLoader.js');
+    // await this.loadScript('../../assets/examples/js/loaders/VTKLoader.js');
+    // await this.loadScript('../../assets/examples/js/loaders/ctm/lzma.js');
+    // await this.loadScript('../../assets/examples/js/loaders/ctm/ctm.js');
+    // await this.loadScript('../../assets/examples/js/loaders/ctm/CTMLoader.js');
     await this.loadScript('../../assets/examples/js/exporters/OBJExporter.js');
     await this.loadScript('../../assets/examples/js/exporters/GLTFExporter.js');
     await this.loadScript('../../assets/examples/js/exporters/STLExporter.js');
@@ -91,21 +81,21 @@ export class LibComponent implements OnInit, AfterViewInit {
     await this.loadScript('../../assets/examples/js/renderers/SoftwareRenderer.js');
     await this.loadScript('../../assets/examples/js/renderers/SVGRenderer.js');
 
-    await this.loadScript('../../assets/editor/js/libs/codemirror/codemirror.js');
-    await this.loadScript('../../assets/editor/js/libs/codemirror/mode/javascript.js');
-    await this.loadScript('../../assets/editor/js/libs/codemirror/mode/glsl.js');
+    // await this.loadScript('../../assets/editor/js/libs/codemirror/codemirror.js');
+    // await this.loadScript('../../assets/editor/js/libs/codemirror/mode/javascript.js');
+    // await this.loadScript('../../assets/editor/js/libs/codemirror/mode/glsl.js');
 
-    await this.loadScript('../../assets/editor/js/libs/esprima.js');
-    await this.loadScript('../../assets/editor/js/libs/jsonlint.js');
-    await this.loadScript('../../assets/editor/js/libs/glslprep.min.js');
+    // await this.loadScript('../../assets/editor/js/libs/esprima.js');
+    // await this.loadScript('../../assets/editor/js/libs/jsonlint.js');
+    // await this.loadScript('../../assets/editor/js/libs/glslprep.min.js');
 
-    await this.loadScript('../../assets/editor/js/libs/codemirror/addon/dialog.js');
-    await this.loadScript('../../assets/editor/js/libs/codemirror/addon/show-hint.js');
-    await this.loadScript('../../assets/editor/js/libs/codemirror/addon/tern.js');
-    await this.loadScript('../../assets/editor/js/libs/acorn/acorn.js');
-    await this.loadScript('../../assets/editor/js/libs/acorn/acorn_loose.js');
-    await this.loadScript('../../assets/editor/js/libs/acorn/walk.js');
-    await this.loadScript('../../assets/editor/js/libs/ternjs/polyfill.js');
+    // await this.loadScript('../../assets/editor/js/libs/codemirror/addon/dialog.js');
+    // await this.loadScript('../../assets/editor/js/libs/codemirror/addon/show-hint.js');
+    // await this.loadScript('../../assets/editor/js/libs/codemirror/addon/tern.js');
+    // await this.loadScript('../../assets/editor/js/libs/acorn/acorn.js');
+    // await this.loadScript('../../assets/editor/js/libs/acorn/acorn_loose.js');
+    // await this.loadScript('../../assets/editor/js/libs/acorn/walk.js');
+    // await this.loadScript('../../assets/editor/js/libs/ternjs/polyfill.js');
     await this.loadScript('../../assets/editor/js/libs/ternjs/signal.js');
     await this.loadScript('../../assets/editor/js/libs/ternjs/tern.js');
     await this.loadScript('../../assets/editor/js/libs/ternjs/def.js');
@@ -118,9 +108,9 @@ export class LibComponent implements OnInit, AfterViewInit {
     await this.loadScript('../../assets/editor/js/libs/ui.js');
     await this.loadScript('../../assets/editor/js/libs/ui.three.js');
 
-    await this.loadScript('../../assets/editor/js/libs/app.js');
-    await this.loadScript('../../assets/editor/js/Player.js');
-    await this.loadScript('../../assets/editor/js/Script.js');
+    // await this.loadScript('../../assets/editor/js/libs/app.js');
+    // await this.loadScript('../../assets/editor/js/Player.js');
+    // await this.loadScript('../../assets/editor/js/Script.js');
 
     await this.loadScript('../../assets/examples/js/vr/WebVR.js');
 
@@ -193,7 +183,13 @@ export class LibComponent implements OnInit, AfterViewInit {
     await this.loadScript('../../assets/editor/js/libs/html2canvas.js');
     await this.loadScript('../../assets/editor/js/libs/three.html.js');
     await this.loadScript('../../assets/editor/js/myEditor.js');
-
   }
+
+  // async ngAfterViewInit() {
+
+
+
+  // }
+
 
 }
