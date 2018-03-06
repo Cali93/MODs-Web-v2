@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { ThreeEditorRoutingModule } from './three-editor-routing.module';
 import { ThreeEditorComponent } from './three-editor/three-editor.component';
-import { LibComponent } from './lib/lib.component';
 import { ThreeEditorService } from '@app/three-editor/three-editor.service';
 
 @NgModule({
@@ -11,8 +10,8 @@ import { ThreeEditorService } from '@app/three-editor/three-editor.service';
     CommonModule,
     ThreeEditorRoutingModule
   ],
-  declarations: [ThreeEditorComponent, LibComponent],
-  exports: [ThreeEditorComponent, LibComponent],
+  declarations: [ThreeEditorComponent],
+  exports: [ThreeEditorComponent],
   providers: [ ThreeEditorService ]
 })
 export class ThreeEditorModule { }

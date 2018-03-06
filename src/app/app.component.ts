@@ -17,7 +17,7 @@ import { environment as env } from '@env/environment';
 
 import { ANIMATE_ON_ROUTE_ENTER } from '@app/core';
 
-import { NIGHT_MODE_THEME, selectorSettings } from './settings';
+// import { NIGHT_MODE_THEME, selectorSettings } from './settings';
 
 @Component({
   selector: 'anms-root',
@@ -56,24 +56,24 @@ export class AppComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit(): void {
-    this.store
-      .select(selectorSettings)
-      .pipe(takeUntil(this.unsubscribe$))
-      .subscribe(settings => {
-        const { theme, autoNightMode } = settings;
-        const hours = new Date().getHours();
-        const effectiveTheme = (autoNightMode && (hours >= 20 || hours <= 6)
-          ? NIGHT_MODE_THEME
-          : theme
-        ).toLowerCase();
-        this.componentCssClass = effectiveTheme;
-        const classList = this.overlayContainer.getContainerElement().classList;
-        const toRemove = Array.from(classList).filter((item: string) =>
-          item.includes('-theme')
-        );
-        classList.remove(...toRemove);
-        classList.add(effectiveTheme);
-      });
+    // this.store
+    //   .select(selectorSettings)
+    //   .pipe(takeUntil(this.unsubscribe$))
+    //   .subscribe(settings => {
+    //     const { theme, autoNightMode } = settings;
+    //     const hours = new Date().getHours();
+    //     const effectiveTheme = (autoNightMode && (hours >= 20 || hours <= 6)
+    //       ? NIGHT_MODE_THEME
+    //       : theme
+    //     ).toLowerCase();
+    //     this.componentCssClass = effectiveTheme;
+    //     const classList = this.overlayContainer.getContainerElement().classList;
+    //     const toRemove = Array.from(classList).filter((item: string) =>
+    //       item.includes('-theme')
+    //     );
+    //     classList.remove(...toRemove);
+    //     classList.add(effectiveTheme);
+    //   });
     this.store
       .select(selectorAuth)
       .pipe(takeUntil(this.unsubscribe$))

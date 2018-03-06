@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { SharedModule } from '@app/shared';
 import { CoreModule } from '@app/core';
 
-import { SettingsModule } from './settings';
+// import { SettingsModule } from './settings';
 import { StaticModule } from './static';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -23,7 +23,7 @@ import { AppComponent } from './app.component';
 
     // features
     StaticModule,
-    SettingsModule,
+    // SettingsModule,
 
     // app
     AppRoutingModule
