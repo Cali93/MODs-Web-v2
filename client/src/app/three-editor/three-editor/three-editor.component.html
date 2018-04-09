@@ -1,0 +1,80 @@
+<!-- Generated template for the ModEditorComponent component -->
+<div id="myFrame">
+	<div class="left-menu">
+	<div class="menu-tab">
+		<div class="tab-title">MODs</div>
+		<div class="tab-icon"><button class="hideMenu" data-toggle=".left-menu">+</button></div>
+	</div>
+	<div class="menu-content">
+		<div class="submenu">
+			<p matTooltip="Choose your surface"
+      matTooltipPosition="before" class="menu-title">Surface</p>
+			<a mat-button matTooltip="No surface will be used"
+      matTooltipPosition="before" class="menu-item menuBtn">Empty</a>
+			<a mat-button class="menu-item menuBtn">Floor</a>
+			<a mat-button class="menu-item menuBtn">Walls</a>
+		</div>
+		<div class="submenu">
+			<p class="menu-title">add</p>
+			<a mat-button class="menu-item menuBtn" id="addMod">MOD</a>
+			<a mat-button class="menu-item menuBtn" id="checkMods">Preset</a>
+			<a mat-button class="menu-item menuBtn"id="fetchStructure">My Presets</a>
+		</div>
+		<div class="submenu">
+			<p class="menu-title">Assets</p>
+			<a mat-button class="menu-item menuBtn">Covering</a>
+			<a mat-button class="menu-item menuBtn">Props</a>
+			<a mat-button class="menu-item menuBtn">Images</a>
+			<a mat-button class="menu-item menuBtn">Lights</a>
+		</div>
+		<a class="badass-button">Save</a>
+	</div>
+</div>
+
+<div class="right-menu">
+	<div class="menu-tab">
+		<div class="tab-icon"><button class="hideMenu" data-toggle=".right-menu">+</button></div>
+		<div class="tab-title">Tools</div>
+	</div>
+	<div class="menu-content">
+		<div class="submenu">
+			<p class="menu-title">Objects</p>
+			<div class="overflower">
+				<ul id="objects">
+
+				</ul>
+			</div>
+		</div>
+		<div class="submenu">
+			<p class="menu-title">History</p>
+			<div class="overflower">
+				<ul id="history">
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="toolbar">
+	<div class="toolbar-item">
+    <mat-checkbox>Select Many</mat-checkbox>
+	</div>
+	<div class="toolbar-separator"></div>
+	<div class="toolbar-item">
+		<a mat-button id="move" class="hide">Translate</a>
+		<a mat-button id="rotate">Rotate</a>
+	</div>
+	<div class="toolbar-item">
+		<a mat-button id="delete">Delete</a>
+	</div>
+	<div class="toolbar-item">
+		<a mat-button id="clone">Clone</a>
+	</div>
+	<div class="toolbar-item">
+		<a>Group</a>
+	</div>
+	<div class="toolbar-separator"></div>
+	<div class="toolbar-item">
+		<a mat-button>Color</a>
+	</div>
+</div></div>

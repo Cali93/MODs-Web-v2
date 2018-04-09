@@ -1,0 +1,77 @@
+# USER ONLY
+USER ROUTE :
+  - POST USER SIGN UP :
+  ✔ @POST user/signup @done (2018-3-8 09:54:47)
+  - POST USER LOGIN :
+  ✔ @POST user/login @done (2018-3-8 09:55:36)
+  - GET USERS :
+  ✔ @GET user/ @done (2018-3-8 09:56:05)
+  - GET USER :
+  ✔ @GET user/:userId @done (2018-3-8 09:56:45)
+  - DELETE USER :
+  ✔ @DELETE user/:userId @done (2018-3-8 09:57:09)
+
+
+# USER RELATIONSHIPS
+USER PROJECTS ROUTE :
+  - GET USER PROJECTS
+  ✔ @GET /user/:userId/projects @done (2018-3-8 09:59:46)
+  - POST USER PROJECT
+  ✔ @POST /user/:userId/projects @done (2018-3-8 09:59:48)
+  ? DELETE USER PROJECT
+  ☐ @DELETE /user/:userId/projects
+
+USER PRODUCTS ROUTE :
+  - GET USER PRODUCTS
+  ✔ @GET /user/:userId/products @done (2018-3-8 14:50:59)
+  - POST USER PRODUCT
+  ✔ @POST /user/:userId/products @done (2018-3-8 14:50:55)
+  ? DELETE USER PRODUCT
+  ☐ @DELETE /user/:userId/products
+
+USER ORDERS ROUTE :
+  - GET USER ORDERS
+  ✔ @GET /user/:userId/orders @done (2018-3-8 16:46:32)
+  - POST USER ORDER
+  ✔ @POST /user/:userId/orders @done (2018-3-8 16:46:34)
+  ? DELETE USER ORDER
+  ☐ @DELETE /user/:userId/orders
+
+# PROJECTS ONLY
+PROJECTS ROUTE :
+  - GET ALL PROJECTS
+  ✔ @GET /projects @done (2018-3-8 10:03:39)
+  ? POST A PROJECT
+  ☐ @POST /projects
+  - GET A SINGLE PROJECT
+  ✔ @GET /projects/:projectId @done (2018-3-8 10:05:52)
+  - UPDATE A PROJECT
+  ✔ @PATCH /projects/:projectId @done (2018-3-8 10:10:10)
+  - DELETE A PROJECT
+  ✔ @DELETE /projects/:projectId @done (2018-3-8 10:11:52)
+
+# PRODUCTS ONLY
+PRODUCTS ROUTE :
+  - GET ALL PRODUCTS
+  ✔ @GET /products @done (2018-3-8 14:46:23)
+  ? POST A PRODUCT
+  ☐ @POST /products
+  - GET A SINGLE PRODUCT
+  ✔ @GET /products/:productId @done (2018-3-8 14:45:20)
+  - UPDATE A PRODUCT
+  ✔ @PATCH /products/:productId @done (2018-3-8 14:50:01)
+  - DELETE A PRODUCT
+  ✔ @DELETE /products/:productId @done (2018-3-8 14:50:23)
+  
+# ORDERS ONLY
+ORDERS ROUTE :
+  - GET ALL ORDERS
+  ✔ @GET /orders @done (2018-3-8 16:54:19)
+  ? POST A ORDER
+  ☐ @POST /orders
+  - GET A SINGLE ORDER
+  ✔ @GET /orders/:orderId @done (2018-3-8 16:54:33)
+  - UPDATE A ORDER -> for the status of the order
+  ✔ @PATCH /orders/:orderId @done (2018-3-9 14:15:14)
+  - DELETE A ORDER
+  ✔ @DELETE /orders/:orderId -> when it's done or cancelled @done (2018-3-9 14:15:16)
